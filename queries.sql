@@ -4,16 +4,15 @@
 )
 
 --- Example row:
---- 92157390, "{"id": 92157390, "asd": "3Ayxwn", "tags": ["sp1UPy", "O0o2Mpa", "XgFrZ3V6j"], "bla bla": "undefined"}"
+--- 92157390, '{"id": 92157390, "asd": "3Ayxwn", "tags": ["sp1UPy", "O0o2Mpa", "XgFrZ3V6j"], "bla bla": "undefined"}'
 
 CREATE INDEX ginix0 ON jsonb_test
-  USING gin ((data -> 'id'::text));
+  USING gin ((data->'id'::text));
 
 CREATE INDEX ginix1 ON jsonb_test
-  USING gin ((data -> 'tags'::text));
+  USING gin ((data->'tags'::text));
 
 --- Queries:
-
 
 --- EXPLAIN
 SELECT count(*) from jsonb_test;
