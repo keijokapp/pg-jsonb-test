@@ -1,7 +1,6 @@
-Andmebaasi kirjete versioonihalduse katsetamise asjad
+JSONB & GIN jõudluse testimise asjad
 
-Kaustas 'lib' on NodeJS programm (app.js) näidiskirjete ja
-nende versioonide lisamiseks andmebaasi.
+Kaustas 'lib' on NodeJS programm (app.js) näidiskirjete loomiseks
 
-Failis [lib/test.sql](/lib/test.sql) on SQL laused näidise tabeli
-loomiseks ja kirjete ajaloo päringu tegemiseks.
+Failis [queries.sql] on SQL laused testtabeli
+loomiseks ja päringute tegemiseks.
