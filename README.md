@@ -2,8 +2,6 @@ JSONB & GIN jõudluse testimise asjad
 
 Kaustas 'lib' on NodeJS programm (app.js) näidiskirjete loomiseks
 
-sql failides on 
-
 SQL failides on laused testtabeli loomiseks ja päringute tegemiseks.
 
 ### jsonb-test-deep
